@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+        <head>
+          <title>tnsconfig - org.codeswarm.tnsconfig</title>
+          <meta name="description" content="tnsconfig - org.codeswarm.tnsconfig" />
+          <meta name="keywords" content="tnsconfig org.codeswarm.tnsconfig" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'org.codeswarm.tnsconfig.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../lib/package_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="org">org</a>.<a href="../package.html" class="extype" name="org.codeswarm">codeswarm</a></p>
+        <h1>tnsconfig</h1>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">tnsconfig</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>This package utilizes the parsing capability of <code>org.codeswarm.orafile</code> to provide an
+API specific to the TNS names file &quot;tnsnames.ora&quot;.</p><p>The project was designed to support a simple use case: Given a particular TNS alias,
+retrieve a single <a href="TnsAddress.html" class="extype" name="org.codeswarm.tnsconfig.TnsAddress">TnsAddress</a>.</p><pre><span class="kw">val</span> address: <span class="std">Option</span>[TnsAddress] = TnsConfig(<span class="lit">"your_database_alias"</span>).address</pre><p>See <code>apply</code> methods on the <a href="TnsConfig$.html" class="extype" name="org.codeswarm.tnsconfig.TnsConfig">TnsConfig object</a>
+for more options, and the <a href="TnsConfig.html" class="extype" name="org.codeswarm.tnsconfig.TnsConfig">TnsConfig class</a>
+for more detail on all of the output information it contains.
+</p></div><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="org.codeswarm.tnsconfig"><span>tnsconfig</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="org.codeswarm.tnsconfig.TnsAddress" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TnsAddressextendsProductwithSerializable"></a>
+      <a id="TnsAddress:TnsAddress"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="TnsAddress.html"><span class="name">TnsAddress</span></a><span class="params">(<span name="host">host: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="port">port: <span class="extype" name="scala.Int">Int</span></span>, <span name="sid">sid: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">One TCP database connection address pulled from a tnsnames.</p>
+    </li><li name="org.codeswarm.tnsconfig.TnsAlias" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TnsAliasextendsProductwithSerializable"></a>
+      <a id="TnsAlias:TnsAlias"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="TnsAlias.html"><span class="name">TnsAlias</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">The string identifier of an entry in a tnsnames.</p>
+    </li><li name="org.codeswarm.tnsconfig.TnsConfig" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TnsConfigextendsProductwithSerializable"></a>
+      <a id="TnsConfig:TnsConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="TnsConfig.html"><span class="name">TnsConfig</span></a><span class="params">(<span name="path">path: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="java.io.File">File</span>]</span>, <span name="dict">dict: <span class="extype" name="org.codeswarm.orafile.OrafileDict">OrafileDict</span></span>, <span name="alias">alias: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>, <span name="address">address: <span class="extype" name="scala.Option">Option</span>[<a href="TnsAddress.html" class="extype" name="org.codeswarm.tnsconfig.TnsAddress">TnsAddress</a>]</span>, <span name="errors">errors: <span class="extype" name="scala.List">List</span>[<a href="error/TnsError.html" class="extype" name="org.codeswarm.tnsconfig.error.TnsError">TnsError</a>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt"></p>
+    </li><li name="org.codeswarm.tnsconfig.TnsNamesOrafileDict" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TnsNamesOrafileDictextendsObject"></a>
+      <a id="TnsNamesOrafileDict:TnsNamesOrafileDict"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$TnsNamesOrafileDict.html"><span class="name">TnsNamesOrafileDict</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      <p class="comment cmt">Wraps the <code>OrafileDict</code> from a tnsnames.</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="org.codeswarm.tnsconfig.TnsAddress" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TnsAddress"></a>
+      <a id="TnsAddress:TnsAddress"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="TnsAddress$.html"><span class="name">TnsAddress</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.codeswarm.tnsconfig.TnsConfig" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TnsConfig"></a>
+      <a id="TnsConfig:TnsConfig"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="TnsConfig$.html"><span class="name">TnsConfig</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.codeswarm.tnsconfig.error" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="error"></a>
+      <a id="error:error"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="error/package.html"><span class="name">error</span></a>
+      </span>
+      </h4>
+      
+    </li><li name="org.codeswarm.tnsconfig.package#parseTnsNames" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="parseTnsNames(tnsNames:String):org.codeswarm.fallible.Fallible[org.codeswarm.orafile.OrafileDict,org.codeswarm.tnsconfig.error.TnsParseFailure]"></a>
+      <a id="parseTnsNames(String):Fallible[OrafileDict,TnsParseFailure]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">parseTnsNames</span><span class="params">(<span name="tnsNames">tnsNames: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="org.codeswarm.fallible.Fallible">Fallible</span>[<span class="extype" name="org.codeswarm.orafile.OrafileDict">OrafileDict</span>, <a href="error/TnsParseFailure.html" class="extype" name="org.codeswarm.tnsconfig.error.TnsParseFailure">TnsParseFailure</a>]</span>
+      </span>
+      </h4>
+      <p class="shortcomment cmt">Parse the content of a tnsnames.</p><div class="fullcomment"><div class="comment cmt"><p>Parse the content of a tnsnames.ora file.
+</p></div></div>
+    </li><li name="org.codeswarm.tnsconfig.package#systemPropertyTnsNamesPath" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="systemPropertyTnsNamesPath():org.codeswarm.fallible.Fallible[java.io.File,org.codeswarm.tnsconfig.error.TnsAdminSystemPropertyMissing]"></a>
+      <a id="systemPropertyTnsNamesPath():Fallible[File,TnsAdminSystemPropertyMissing]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">systemPropertyTnsNamesPath</span><span class="params">()</span><span class="result">: <span class="extype" name="org.codeswarm.fallible.Fallible">Fallible</span>[<span class="extype" name="java.io.File">File</span>, <a href="error/TnsAdminSystemPropertyMissing.html" class="extype" name="org.codeswarm.tnsconfig.error.TnsAdminSystemPropertyMissing">TnsAdminSystemPropertyMissing</a>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="org.codeswarm.tnsconfig.package#tnsAdminSystemProperty" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="tnsAdminSystemProperty():org.codeswarm.fallible.Fallible[String,org.codeswarm.tnsconfig.error.TnsAdminSystemPropertyMissing]"></a>
+      <a id="tnsAdminSystemProperty():Fallible[String,TnsAdminSystemPropertyMissing]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">tnsAdminSystemProperty</span><span class="params">()</span><span class="result">: <span class="extype" name="org.codeswarm.fallible.Fallible">Fallible</span>[<span class="extype" name="scala.Predef.String">String</span>, <a href="error/TnsAdminSystemPropertyMissing.html" class="extype" name="org.codeswarm.tnsconfig.error.TnsAdminSystemPropertyMissing">TnsAdminSystemPropertyMissing</a>]</span>
+      </span>
+      </h4>
+      
+    </li><li name="org.codeswarm.tnsconfig.package#tnsAdminSystemPropertyKey" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="tnsAdminSystemPropertyKey:String"></a>
+      <a id="tnsAdminSystemPropertyKey:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">tnsAdminSystemPropertyKey</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      
+    </li><li name="org.codeswarm.tnsconfig.package#tnsNamesFilename" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="tnsNamesFilename:String"></a>
+      <a id="tnsNamesFilename:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">tnsNamesFilename</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
